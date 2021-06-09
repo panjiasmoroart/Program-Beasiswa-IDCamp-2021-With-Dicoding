@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+
+/* referensi warna website  */
+/* https://colorhunt.co/palette/206929 */
+
+/* Desain by Panji Asmoro  */
+/* email : pandjiasmoroart@gmail.com  */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2,
+h3,
+figcaption {
+  color: #ac4b1c;
+}
+
+h1 {
+  color: #ffd57e;
+}
+
+h1,
+h3,
+figcaption,
+.logo {
+  font-family: "Merienda", cursive;
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header > .header-left {
+  flex: 1;
+}
+
+header > .header-right {
+  flex: 8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > .header-left > .logo {
+  display: inline-block;
+  padding: 10px 10px;
+  width: 85px;
+  background-color: #ac4b1c;
+  color: #fff;
+  text-align: center;
+  font-size: 9px;
+}
+
+header > .header-left > .logo > span {
+  border: 1px solid #fff;
+  display: block;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+nav li {
+  display: inline;
+  padding: 0 25px;
+}
+
+nav li a {
+  color: #ac4b1c;
+}
+
+nav li a:hover {
+  color: #fca652;
+}
+
+.jumbotron {
+  background-color: #fca652;
+  padding: 125px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.jumbotron > p {
+  color: #ffd57e;
+}
+
+main {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+}
+
+main div.content {
+  /* background-color: burlywood; */
+  flex: 3;
+}
+
+.card {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.card > figure {
+  flex: 1;
+  margin-left: 0;
+}
+
+.card > figure > img {
+  border-radius: 5px;
+  width: 275px;
+}
+
+.card > section {
+  flex: 3;
+}
+
+main aside {
+  margin: 30px 0 30px 30px;
+  flex: 1;
+}
+
+aside > .contact {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.menu-add ul {
+  padding: 0;
+}
+.menu-add ul li {
+  padding: 0 0 0 25px;
+  position: relative;
+}
+
+.menu-add ul li::before {
+  position: absolute;
+  left: 5px;
+  content: "\2713";
+  color: #fca652;
+  font-weight: bold;
+}
+
+.menu-add > ul li a {
+  display: block;
+  color: #ac4b1c;
+  background-color: #ffd57e;
+  margin: 7px 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+aside > .contact > .profil,
+.menu-add h2 {
+  text-align: center;
+}
+
+aside > .contact > .profil {
+  margin-top: 30px;
+  color: #fca652;
+  background-color: #ac4b1c;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+aside > .contact > .profil > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside > .contact > .profil p {
+  font-family: "Merienda", cursive;
+}
+
+aside > .contact > .profil span {
+  font-weight: 600;
+  color: #ffd57e;
+}
+
+footer {
+  display: flex;
+  background-color: #fca652;
+  color: #ffd57e;
+  height: 70px;
+}
+
+footer div {
+  width: 1140px;
+  margin: auto;
+}
+
+a.add {
+  text-align: center;
+  display: inline-block;
+  border: none;
+  background-color: #fca652;
+  color: #ffd57e;
+  cursor: pointer;
+  width: 80px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+a.add:hover {
+  background-color: #ac4b1c;
+  color: #fff;
+}
+
+/* Responsive Website */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* @media (min-width: 1281px) {
+} */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+} */
+
+/* ##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header > .header-right {
+    flex: 9;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    padding: 0 20px;
+  }
+
+  .jumbotron {
+    font-size: 20px;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  main div.content {
+    flex: none;
+  }
+
+  main aside {
+    margin-top: 30px;
+    margin-left: 0px;
+    flex: none;
+  }
+
+  .card {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .card > figure {
+    flex: none;
+    margin: 0;
+  }
+
+  .card > figure > img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
+
+  .card > section {
+    flex: none;
+  }
+
+  .card > section > hgroup > h2 {
+    font-size: 35px;
+    margin: 10px 0 0 0;
+  }
+
+  .card > section > hgroup > h3 {
+    font-size: 25px;
+    margin: 5px 0 0 0;
+  }
+
+  .card > section > p {
+    font-size: 20px;
+  }
+
+  a.add {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  footer > div {
+    padding-left: 20px;
+  }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  header > .header-right {
+    flex: 10;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav li {
+    padding: 0 10px;
+  }
+
+  nav li a {
+    font-size: 10px;
+  }
+
+  .jumbotron {
+    font-size: 18px;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  main div.content {
+    flex: none;
+  }
+
+  main aside {
+    margin-top: 30px;
+    margin-left: 0px;
+    flex: none;
+  }
+
+  .card {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .card > figure {
+    flex: none;
+    margin: 0;
+  }
+
+  .card > figure > img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
+
+  .card > section {
+    flex: none;
+  }
+
+  .card > section > hgroup > h2 {
+    font-size: 25px;
+    margin: 5px 0 0 0;
+  }
+
+  .card > section > hgroup > h3 {
+    font-size: 18px;
+    margin: 3px 0 0 0;
+  }
+
+  .card > section > p {
+    font-size: 13px;
+  }
+
+  a.add {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  footer > div {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    display: block;
+  }
+
+  header > .header-left {
+    flex: none;
+  }
+
+  header > .header-right {
+    flex: none;
+  }
+
+  header > .header-left > .logo {
+    display: block;
+    width: 100%;
+    background-color: #ac4b1c;
+    margin-top: 0;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .jumbotron {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  main div.content {
+    flex: none;
+  }
+
+  main aside {
+    margin-top: 30px;
+    margin-left: 0px;
+    flex: none;
+  }
+
+  .card {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .card > figure {
+    flex: none;
+    margin: 0;
+  }
+
+  .card > figure > img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
+
+  .card > section {
+    flex: none;
+  }
+
+  a.add {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  footer > div {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+}
+
+/* Responsive diukuran 319px ke bawah */
+@media (max-width: 319px) {
+  header {
+    display: block;
+  }
+
+  header > .header-left {
+    flex: none;
+  }
+
+  header > .header-right {
+    flex: none;
+  }
+
+  header > .header-left > .logo {
+    display: block;
+    width: 100%;
+    background-color: #ac4b1c;
+    margin-top: 0;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .jumbotron {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  main div.content {
+    flex: none;
+  }
+
+  main aside {
+    margin-top: 30px;
+    margin-left: 0px;
+    flex: none;
+  }
+
+  .card {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .card > figure {
+    flex: none;
+    margin: 0;
+  }
+
+  .card > figure > img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
+
+  .card > section {
+    flex: none;
+  }
+
+  .card > section > hgroup > h2 {
+    font-size: 25px;
+    margin: 3px 0 0 0;
+  }
+
+  .card > section > hgroup > h3 {
+    font-size: 18px;
+    margin: 3px 0 0 0;
+  }
+
+  .card > section > p {
+    font-size: 10px;
+  }
+
+  a.add {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  footer > div {
+    padding-left: 15px;
+    font-size: 10px;
+  }
+}
